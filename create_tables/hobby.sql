@@ -2,7 +2,7 @@ CREATE TABLE public.hobby
 (
     id integer NOT NULL DEFAULT nextval('hobby_id_seq'::regclass),
     name character(255) COLLATE pg_catalog."default" NOT NULL,
-    risk numeric(2,0) NOT NULL,
+    risk numeric(5,2) NOT NULL,
     CONSTRAINT hobbys_pkey PRIMARY KEY (id)
 )
 
